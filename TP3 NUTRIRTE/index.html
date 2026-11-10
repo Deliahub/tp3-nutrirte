@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nutrirte — Nutrición Avanzada. Productos, orientación y acompañamiento para hábitos saludables.">
+  <title>Nutrirte | Nutrición Avanzada</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Nutrirte, inicio">
+      <img src="imagenes/logo.jpg" alt="Logo de Nutrirte">
+        <span>Nutrirte</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#testimonios">Testimonios</a><a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="#contacto">Quiero asesoramiento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow">NUTRICIÓN AVANZADA</span>
+          <h1>Pequeños hábitos, grandes cambios.</h1>
+          <p>En Nutrirte te acompañamos a conocer opciones de nutrición y bienestar para que puedas avanzar hacia tus objetivos con información y orientación.</p>
+          <div class="hero-actions">
+    <a class="btn btn-light" href="#contacto">
+        Quiero asesoramiento
+    </a>
+</div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-card">
+    <img src="imagenes/inicio.jpg" alt="Nutrirte">
+</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-heading">
+          <span class="kicker">¿Cómo podemos ayudarte?</span>
+          <h2>Servicios para acompañarte</h2>
+          <p>Conocé las propuestas de Nutrirte y encontrá la orientación que mejor se adapte a tus necesidades.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><div class="service-icon">🥗</div><h3>Orientación nutricional</h3><p>Información y acompañamiento para incorporar hábitos de alimentación más conscientes y equilibrados.</p></article>
+          <article class="service-card"><div class="service-icon">🌿</div><h3>Productos de bienestar</h3><p>Conocé nuestra línea de productos nutricionales y recibí información para elegir de manera responsable.</p></article>
+          <article class="service-card"><div class="service-icon">📈</div><h3>Seguimiento de objetivos</h3><p>Revisá tus avances y tus hábitos con herramientas de seguimiento y orientación personalizada.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-mark">
+        <div class="about-copy">
+          <span class="kicker">Conocé Nutrirte</span>
+          <h2>Bienestar que empieza con vos</h2>
+          <p>Nutrirte — Nutrición Avanzada es un emprendimiento enfocado en acercar productos e información vinculados con la nutrición y el bienestar. Queremos brindarte una atención cercana, escuchar tus consultas y ayudarte a conocer alternativas para acompañar tus hábitos.</p>
+          <p>Creemos que cada proceso es personal y que la información clara es el primer paso para tomar decisiones conscientes.</p>
+          <div class="about-points"><span>Atención cercana</span><span>Información clara</span><span>Opciones de bienestar</span><span>Acompañamiento</span></div>
+        </div>
+      </div>
+        <img src="imagenes/nutrirte.png">
+    </section>
+
+    <section id="testimonios">
+      <div class="container">
+        <div class="section-heading">
+          <span class="kicker">Experiencias</span><h2>Lo que queremos construir</h2>
+          <p>Un espacio de confianza, escucha y acompañamiento.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="quote"><div class="stars">★★★★★</div><p>“Me gustó recibir información clara y poder consultar antes de elegir los productos que quería conocer.”</p><strong>Angela C.</strong><small> </small></article>
+          <article class="quote"><div class="stars">★★★★★</div><p>“La atención fue amable y pude resolver mis dudas sobre las opciones disponibles.”</p><strong>Cristian F.</strong><small> </small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <div class="section-heading"><span class="kicker">Estamos para ayudarte</span><h2>Contactate con Nutrirte</h2><p>Dejanos tu consulta y pronto podremos ponernos en contacto.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Hablemos de bienestar</h3>
+            <p>Completá el formulario con tus datos y contanos qué información necesitás.</p>
+            <div class="contact-line">✉ Email: nutrirte@26.com.ar</div>
+            <div class="contact-line">📱 WhatsApp: +5493884586231</div>
+            <div class="contact-line">📍 Ubicación: Jujuy, Argentina </div>
+          </div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required></div>
+              <div><label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tu@email.com" required></div>
+            </div>
+            <label for="asunto">¿Sobre qué querés consultar?</label><input id="asunto" name="asunto" type="text" placeholder="Ej. Productos, orientación, seguimiento">
+            <label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta..." required></textarea>
+            <button class="btn btn-primary" type="submit">Enviar consulta</button>
+            <p class="form-note" id="formNote" role="status"> </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+    <img src="imagenes/logo.jpg" alt="Logo de Nutrirte">
+
+    <div class="footer-brand">
+        <h3>Nutrirte</h3>
+        <p>Nutrición Avanzada</p>
+    </div>
+</div>
+      <div class="copyright">© <span id="year"></span> Nutrirte. Todos los derechos reservados. <span> </span></div>
+    </div>
+  </footer>
+<script src="script.js" defer></script>
+</body>
+</html>
